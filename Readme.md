@@ -63,7 +63,7 @@ sudo systemctl start docker.service
 ♯ 専用イメージのビルド
 sudo docker build --no-cache -t weather .
 
-# ビルドしたイメージからコンテナを起動
+# ビルドしたイメージからコンテナを起動（この後なら、ウェブブラウザから閲覧が可能）
 sudo docker run --name weatherapp -d -p 8080:8080 --rm weather
 
 # コンテナ停止と副産物の削除
